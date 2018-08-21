@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/analytics"
+            android:id="@+id/analytics"
+            android:theme="@style/custom_spinner"
+            android:layout_gravity="end"/>
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/male"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_weight="1"/>
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/female"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/error"
+                android:theme="@style/custom_spinner"
+                android:id="@+id/eventName"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btnAnalyze"
+                android:textSize="15sp"
+                android:backgroundTint="@color/eucalyptus"
+                android:text="Show Graph"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btnPrint"
+                android:textSize="15sp"
+                android:text="Generate Report"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

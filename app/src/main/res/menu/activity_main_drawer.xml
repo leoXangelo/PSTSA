@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_show_chart_black_24dp"
+            android:title="Graphical Report" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:title="Criteria" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_stars_black_24dp"
+            android:title="Participants" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Judge" />
+    </group>
+
+    <item android:title="Connection Configuration">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_http_black_24dp"
+                android:title="Connection" />
+            <item
+                android:id="@+id/manage_account"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Manage Account" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_vpn_key_black_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

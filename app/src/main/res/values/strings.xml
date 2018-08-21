@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PSTS(Coordinator)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Welcome</string>
+    <string name="nav_header_subtitle">Pageant Scoring and Tabulation System</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Logs</string>
+
+    <string name="height">Height (e.g. 5\"1) Optional</string>
+    <string-array name="filterCriteria">
+        <item>Criteria Name</item>
+        <item>Event Name</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="analytics">
+        <item>Averaging</item>
+        <item>Ranking</item>
+    </string-array>
+
+    <string-array name="error">
+        <item>Network Error</item>
+    </string-array>
+</resources>

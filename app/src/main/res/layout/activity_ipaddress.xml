@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Ip"
+            android:hint="IP ADDRESS (e.g. 192.168.8.1)"
+            android:inputType="number|numberDecimal"
+            android:digits="0123456789."
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnIP"
+        android:text="Connect" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Server: "
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:id="@+id/txtserver"
+        android:drawableLeft="@drawable/ic_brightness_1_black_24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Device: "
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:id="@+id/txtdevice"
+        android:drawableLeft="@drawable/ic_brightness_1_black_24dp"
+        android:visibility="gone"/>
+</LinearLayout>
